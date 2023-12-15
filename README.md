@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # learn-frontend
 Study examples during learning and exploring last frontend tools, libs, solutions.
 
@@ -7,3 +8,6 @@ Study examples during learning and exploring last frontend tools, libs, solution
 - HTML, CSS, SASS
 - JS, TS
 - React
+=======
+Hi
+>>>>>>> 366e875 (Hello chu)
