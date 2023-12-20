@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Знакомство с html тегами.(Формы)</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    </head>
+    <body>
+        <h1>Анкета о себе</h1>
+
+        <form action="#" method="get" enctype="multipart/form-data">
+            <div>
+                <p><b>Имя</b><br /><input placeholder="Введите имя" type="text" name="name" /></p>
+            </div>
+            <div>
+                <p><b>Возраст</b><br /><input placeholder="Введите дату рождения" type="date" name="dateOfBirth"></p>
+             </div>
+             <div>
+                <p><b>Пол</b><br /><input type="radio" name="gender"></p>
+             </div>
+             <div>
+                <p><b>Пол</b></p>
+                <input checked type="radio" name="female">Женский</p>
+                <input type="radio" name="male">Мужской</p>
+             </div>
+            <div>
+                <p><b>Опыт работы</b></p>
+                    <p><input checked type="radio" name="work" value="no-experience" /> Нет опыта</p>
+                    <p><input  type="radio" name="work" value="until-five-years" /> От 1-5 лет</p>
+                    <p><input type="radio" name="work" value="more-five-years" /> Более 5 лет</p>
+            </div>
+            <br />
+            <div>
+                <p><b>Знание языков программирования</b></p>
+                <p><input disabled checked type="checkbox" name="lang" value="js" /> JavaScript </p>
+                <p><input type="checkbox" name="lang" value="python" /> Python </p>
+                <p><input type="checkbox" name="lang" value="c++" /> C++ </p>
+                <p><input type="checkbox" name="lang" value="all" /> Всё вышеперечисленное </p>  
+            </div>
+            <br />
+            <div> 
+                <p><b>Выберете формат работы</b></p>
+                <select name="format">
+                    <option value="office">Офис</option>
+                    <option selected value="remote">Удаленно</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                <p>Добавьте резюме <input type="file" name="resume" /></p>
+            </div>
+            <div>
+                <img src="/src/assets/images/background.jpg" alt="error">
+            </div>
+            <div> 
+                <p></p>
+                <textarea placeholder="Расскажите немного о себе" cols="72" rows="5"></textarea>
+            </div>
+            <div> 
+                <button type="submit">Отправить</button>
+            </div>
+
+        </form>
+    </body>
+</html>
+       
+      
+        
+        
