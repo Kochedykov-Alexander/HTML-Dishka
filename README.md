@@ -7,4 +7,3 @@ Study examples during learning and exploring last frontend tools, libs, solution
 - HTML, CSS, SASS
 - JS, TS
 - React
-
