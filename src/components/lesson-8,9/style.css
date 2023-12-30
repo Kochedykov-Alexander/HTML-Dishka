@@ -53,7 +53,8 @@ body{
 .travel{
 	font-size: 20px;
 	text-align: center;
-	color: white;
+	color: white; 
+
 }
 
 .baikal{
@@ -76,12 +77,11 @@ body{
 	font-size: 20px;
 }
 
-.how{
+.header{
 	font-size: 30px;
 }
-.place{
+.desc{
 	font-size: 20px;
-	margin:
 }
 
 .list{
@@ -90,13 +90,13 @@ body{
 	font-style: oblique;
 }
 .list li{
-	margin: 10px 0 5px 0;
+	margin: 10px 0 5px;
 	background: url('../../assets/images/li.svg') left no-repeat;
 	padding: 0 0 0 24px;
 
 }
 
-.knopka{
+.button-next{
 	padding: 1%;
 	font-size: 20px;
 	border: 2px solid black;
