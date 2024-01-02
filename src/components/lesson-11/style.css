@@ -43,3 +43,82 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background-size: cover;
 	min-height: 100%;
 }
+.heading{
+    text-align: center;
+    color: rgb(52, 64, 6);
+    font-size: 32px;
+    font-weight: 700;
+    padding: 20px;
+}
+.area{
+    margin: 0 auto;
+    width: 350px;
+}
+.list{
+    font-size: 20px;
+    line-height: normal;
+    margin: 15px;
+    text-indent: 25px;
+}
+.list li{
+    background: url('../../assets/images/li.svg') left no-repeat;
+    background-position: 2px;
+}
+
+.list li:nth-child(1){
+    text-decoration: line-through;
+}
+.list li:nth-child(2){
+    font-weight: 700;
+}
+.list li:nth-child(3){
+    font-style: italic;
+}
+.list li:nth-child(4){
+    text-transform: uppercase;
+}
+.list li:hover{
+    color: red;
+}
+.buttonone{
+    display: block;
+    width: 280px;
+    height: 50px;
+    background-color: rgb(104, 147, 118);
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+} 
+.buttonone:hover{
+    color: rgb(27, 27, 22);
+    background-color: rgb(42, 124, 78);
+}
+.buttonone:active{
+    background-color: grey;
+}
+.inputone{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid grey;
+    height: 80px;
+    width: 300px;
+    font-size: 18px;
+}
+.inputone:focus{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.paragraph-one, .paragraph-two{
+	margin: 10px;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 600;
+}
+.paragraph-one::first-line{
+	color: rgb(97, 1, 94);
+}
+.paragraph-two::first-letter{
+	color: rgb(6, 244, 98);
+	font-size: 30;
+	font-weight: 900;
+}
