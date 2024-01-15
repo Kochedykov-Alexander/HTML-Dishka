@@ -63,30 +63,28 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .hi__body{
 	color: white;
-	padding: 0px 30px 0px 0px;
+	padding-right: 30px;
 
 }
 .hi__title{
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 	font-size: 60px;
-	margin: 0px 0px 38px 0px;
+	margin-bottom: 38px;
 
 }
-.hi__list{}
 .hi__list li{
 	background: url('../../assets/images/icon.png') 0 1px no-repeat;
 	background-size: 20px;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 	font-size: 20px;
 	line-height: 22px;
-	padding: 0px 0px 0px 36px;
-	margin: 0px 0px 15px 0px;
+	padding-left: 36px;
+	margin-bottom: 15px;
 
 }
 .hi__list li:last-child{
 	margin: 0;
 }
-.hi__image{}
 
 .title{
 	color: rgb(86, 151, 182);
@@ -109,14 +107,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .what__body {
 	flex: 1 1 auto;
-	padding: 0px 0px 0px 38px;
+	padding-left: 38px;
 }
 .what__title {
-	margin: 0px 0px 33px 0px;
+	margin-bottom: 33px;
 }
-.what__text {}
+
 .what__text p {
-	margin: 0px 0px 33px 0px;
+	margin-bottom: 33px;
 	color:#807854;
 	font-size: 16px;
 	line-height: 24px;
@@ -124,11 +122,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .columns {
 	background-color: #e7e7f2;
-	padding: 30px 0 20px 0;
+	padding: 30px 0 20px;
 }
 .columns__title {
 	text-align: center;
-	margin: 0px 0px 30px 0px;
+	margin-bottom: 30px;
 }
 .columns__row {
 	display: flex;
@@ -139,11 +137,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .columns__column {
 	padding: 0px 8px;
 	flex: 0 1 50%;
-	margin: 0px 0px 30px 0px;
+	margin-bottom: 30px;
 }
-.columns__item {}
 
-.item {}
 .item__row {
 	display: flex;
 }
@@ -152,13 +148,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .item__body {
 	flex: 1 1 auto;
-	padding: 0px 0px 0px 15px;
+	padding-left: 15px;
 }
 .item__title {
 	color: #313173;
 	font-size: 24px;
 	line-height: 30px;
-	margin: 0px 0px 13px 0px;
+	margin-bottom: 13px;
 }
 .item__text {
 	color: #6e6643;
@@ -171,7 +167,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .vertical__title {
 	text-align: center;
-	margin: 0px 0px 30px 0px;
+	margin-bottom: 30px;
 }
 .vertical__body {
 	max-width: 990px;
@@ -192,7 +188,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: white;
 	border-radius: 5px;
 	border: 1px solid rgb(41, 75, 96);
-	padding: 0px 0px 20px 0px;
+	padding-bottom: 20px;
 	display: flex;
 	flex-direction: column;
 }
@@ -216,7 +212,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	flex: 1 1 auto;
 }
 .vertical__text p {
-	margin: 0px 0px 15px 0px;
+	margin-bottom: 15px;
 }
 .vertical__text p:last-child{
 	margin: 0;
