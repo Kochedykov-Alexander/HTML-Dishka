@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>CSS. Часть №12,13 (CSS flexbox, препроцессоры)</title>
+		<link rel="stylesheet" href="../lesson-12,13/style.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<body>
+        <div class="wrapper">
+             <div class="content">
+               <div class="hi">
+                  <div class="container">
+                     <div class="hi__row">
+                        <div class="hi__body">
+                           <div class="hi__title">Привет, друг!</div>
+                           <ul class="hi__list">
+                              <li>У тебя все получится!</li>
+                              <li>Никогда не сдавайся!</li>
+                              <li>Сегодня ты уже знаешь больше чем вчера!</li>
+                              <li>Благодарю тебя за поддержку!</li>
+                           </ul>
+                        </div>
+                        <div class="hi__image">
+                           <img src="../../assets/images/background.jpg">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="what">
+                  <div class="container">
+                     <div class="what__row">
+                        <div class="what__image">
+                           <img src="../../assets/images/flexbox-model.png">
+                        </div>
+                        <div class="what__body">
+                           <div class="what__title title">
+                              Что такое FlexBox?
+                           </div>
+                           <div class="what__text">
+                              <p>CSS модуль раскладки Flexible Box, обычно называемый флексбокс или flexbox или просто flex (флекс), был разработан как модель одномерного-направленного макета и как один из методов распределения пространства между элементами в интерфейсе, с мощными возможностями выравнивания. В этой статье даётся краткое описание основных функций flexbox.</p>
+                              <p>Когда мы описываем flexbox как одномерно-направленный, мы имеем в виду, что flexbox имеет дело с макетом в одной плоскости за раз – либо в виде строки, либо в виде столбца. Как альтернативу можно упомянуть двумерную модель CSS Grid Layout, которая управляет и столбцами и строками одновременно.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="columns">
+                  <div class="container">
+                     <div class="columns__title title">Колонки с flex-контейнерами</div>
+                     <div class="columns__row">
+                        <div class="columns__column">
+                           <div class="columns__item item">
+                              <div class="item__row">
+                                 <div class="item__image">
+                                    <img src="../../assets/images/bluebox.jpg" height="200px" width="200px">
+                                 </div>
+                                 <div class="item__body">
+                                    <div class="item__title">Создание контейнера</div>
+                                    <div class="item__text">Крупный блок, внутри которого расположены элементы, называется флекс-контейнером. Чтобы превратить блок во флекс-контейнер, нужно задать для него CSS-свойство: display: flex.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="columns__column">
+                           <div class="columns__item item">
+                              <div class="item__row">
+                                 <div class="item__image">
+                                    <img src="../../assets/images/bluebox.jpg" height="200px" width="200px">
+                                 </div>
+                                 <div class="item__body">
+                                    <div class="item__title">Создание контейнера</div>
+                                    <div class="item__text">Крупный блок, внутри которого расположены элементы, называется флекс-контейнером. Чтобы превратить блок во флекс-контейнер, нужно задать для него CSS-свойство: display: flex.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="columns__column">
+                           <div class="columns__item item">
+                              <div class="item__row">
+                                 <div class="item__image">
+                                    <img src="../../assets/images/bluebox.jpg" height="200px" width="200px">
+                                 </div>
+                                 <div class="item__body">
+                                    <div class="item__title">Создание контейнера</div>
+                                    <div class="item__text">Крупный блок, внутри которого расположены элементы, называется флекс-контейнером. Чтобы превратить блок во флекс-контейнер, нужно задать для него CSS-свойство: display: flex.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="columns__column">
+                           <div class="columns__item item">
+                              <div class="item__row">
+                                 <div class="item__image">
+                                    <img src="../../assets/images/bluebox.jpg" height="200px" width="200px">
+                                 </div>
+                                 <div class="item__body">
+                                    <div class="item__title">Создание контейнера</div>
+                                    <div class="item__text">Крупный блок, внутри которого расположены элементы, называется флекс-контейнером. Чтобы превратить блок во флекс-контейнер, нужно задать для него CSS-свойство: display: flex.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="vertical">
+                  <div class="container">
+                     <div class="vertical__title title">Вертикальное выравнивание</div>
+                     <div class="vertical__body">
+                        <div class="vertical__row">
+                           <div class="vertical__column">
+                              <div class="vertical__item">
+                                 <div class="vertical__subtitle">буду рад</div>
+                                 <div class="vertical__label">подписке</div>
+                                 <div class="vertical__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita tenetur, at ullam, error maiores quod explicabo laboriosam sunt mollitia accusamus temporibus asperiores nostrum cumque enim blanditiis, reiciendis magnam modi laborum!</div>
+                                 <a href="" class="vertical__btn">подписаться</a>
+                              </div>
+                           </div>
+                           <div class="vertical__column">
+                              <div class="vertical__item">
+                                 <div class="vertical__subtitle">буду рад</div>
+                                 <div class="vertical__label">лайку</div>
+                                 <div class="vertical__text">
+                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quibusdam reprehenderit quidem facere possimus aliquid animi perspiciatis quas est, quos doloremque alias mollitia? Voluptates possimus doloribus rem? Vero, inventore tempora.</p>
+                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, tenetur asperiores pariatur laborum alias quae velit eum inventore voluptatem enim doloremque officia maiores molestias accusantium quia delectus rerum voluptatum ipsa.</p>
+                                 </div>
+                                 <a href="" class="vertical__btn">лайк</a>
+                              </div>
+                           </div>
+                           <div class="vertical__column">
+                              <div class="vertical__item">
+                                 <div class="vertical__subtitle">буду рад</div>
+                                 <div class="vertical__label">комментарию</div>
+                                 <div class="vertical__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita tenetur, at ullam, error maiores quod explicabo laboriosam sunt mollitia accusamus temporibus asperiores nostrum cumque enim blanditiis, reiciendis magnam modi laborum!</div>
+                                 <a href="" class="vertical__btn">комментировать</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> 
+             </div>
+            <footer class="footer">
+               <div class='container'>
+                  <div class="footer__row">
+                     <div class="footer__text">Фрилансер по жизни 2024</div>
+                  </div>
+               </div>
+            </footer>
+        </div>
+   </body>
+</html>
