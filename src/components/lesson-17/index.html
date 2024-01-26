@@ -6,74 +6,116 @@
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
    <body>
-      <div class="container">
-		<div class="container__left">
-			<div class="profile">
-				<div class="photo">
+      <div class="page">
+		<section class="page__main main">
+			<div class="main__profile">
+				<div class="main__profile-avatar">
 					<img src="../../assets/images/photome1.jpg" alt="photo" >
 				</div>
-				<p class="name"> Diana</p>
-				<p class="pro">Development of mobile applications and Internet services</p>
+				<span class="main__profile-name">Diana</span>
+				<span class="main__profile-position">Development of mobile applications and Internet services</span>
 			</div>
-			<div class="contacts">
-				<div class="mail">diana.danilyuk2015@gmail.com</div>
-				<div class="number">+7 987 101 00 45</div>
-				<div class="website">dishka.ru</div>
-				<div class="location">Kazan</div>
-			</div>
-			<div class="knowledges">
-				<h2>Industry Knowledges</h2>
+			<section class="main__contacts">
 				<ul>
-					<li> Разработка структуры простого html сайта</li>
+					<li class="main__contacts-mail">diana.danilyuk2015@gmail.com</li>
+					<li class="main__contacts-phone-number">+7 987 101 00 45</li>
+					<li><a href="https://dishka.ru" class="main__contacts-website">dishka.ru</a></li>
+					<li class="main__contacts-location">Kazan</li>
+				</ul>
+			</section>
+			<section class="main__knowledges">
+				<h2>Отраслевые знания</h2>
+				<ul class="main__knowledges-list">
+					<li> Разработка структуры html сайта</li>
 					<li> Основы программирования на PHP</li>
 					<li> Основы работы с СУБД SQL</li>
-					<li> Технологии front-end разработки: HTML, CSS, JavaScript, адаптивная вёрстка, работа с библиотеками</li>
+					<li> Технологии front-end разработки</li>
 				</ul>	
-			</div>
-			<div class="languages">
-				<h2>Languages</h2>
-				<ul class="spa">
+			</section>
+			<section class="main__languages">
+				<h2>Языки</h2>
+				<ul class="main__languages-list">
 					<li>English</li>
 					<li>Udmurt</li>
 					<li>Japanese</li>
 					<li>Tatar</li>
 				</ul>
-			</div>
-			<div class="social ">
-				<h2>Social </h2>
-				<ul>
+			</section>
+			<section class="main__social">
+				<h2>Соц.сети</h2>
+				<ul class="main__social-list">
 					<li>Dishka.ru</li>
 					<li>linkedin.com/in/Danilyuk</li>
 					<li>dribbble.com/Danilyuk</li>
 					<li>behance.com/Danilyuk</li>
 				</ul>
-			</div>
-			<div class="hobbies">
-				<div class="shell">
-					<h2>Hobbies</h2>
+			</section>
+			<section class="main__hobbies">
+				<div class="main__hobbies-shell">
+					<h2>Хобби</h2>
 				</div>
-				<ul class="list">
-					<li>Рисование</li>
-					<li>Спорт</li>
-					<li>Танцы</li>
-					<li>Чтение</li>
-				</ul>
-			</div>
-		</div>
-		<div class="container__right">
-			<div class="hobbies">
-				<div class="shell">
-					<h2>Hobbies</h2>
+				<ul class="main__hobbies-list">
+					<li>
+					  <i class="reading"></i>
+					  Чтение
+					</li>
+					<li>
+					  <i class="dancing"></i>
+					  Танцы
+					</li>
+					<li>
+					  <i class="singing"></i>
+					  Пение
+					</li>
+					<li>
+					  <i class="football"></i>
+					  Футбол
+					</li>
+				  </ul>
+			</section>
+		</section>
+		<section class="page__education education">
+			<section class="education__experience">
+				<div class="education__shell">
+					<div class="title">
+						<div class="title-box">
+							<h1>Опыт</h1>
+						</div>
+						<div class="line"></div>	
+					</div>
+					<h3>Консультационная студия Blue Moon</h3>
+					<h4>Старший UI-дизайнер</h4>
+					<h5>Август 2020 г. – настоящее время – 1 год, Нью-Йорк.</h5>
+					<p>Команда разработчиков разрабатывает прототипы, проектирует и реализует UI и UX с помощью экономичного процесса проектирования: исследование, проектирование, тестирование и повторение.</p>
+					<h3>Дизайн продукта Black Yark</h3>
+				</div>
+			</section>
+			<section class="education__studies">
+				<div class="title">
+					<div class="title-box">
+						<h1>Образование</h1>
+					</div>
+					<div class="line"></div>	
+				</div>
+				<h3>Бакалавр технических наук в области робототехники</h3>
+				<h3>Курсы "Разработка мобильных приложений и интернет-сервисов"</h3>
+			</section>
+			<section class="education__skills">
+				<div class="title">
+					<div class="title-box">
+						<h1>Мои навыки</h1>
+					</div>
+					<div class="line"></div>	
 				</div>
 				<ul>
-					<li>струментами сия.</li>
-					<li>тftujfjfjfном офисе.</li>
-					<li>а показывает, что его стоит сюда включить.</li>
-					<li>Владеть аичего дополнительное требование.</li>
-					<li>Быть ничеотсеяны.</li>
+					<li>HTML</li>
+					<li>GIT</li>
+					<li>JavaScript</li>
+					<li>React</li>
+					<li>Webpack</li>
 				</ul>
-			</div>
-		</div>
+			</section>
+		</section>
 	  </div>
    </body>
 </html>

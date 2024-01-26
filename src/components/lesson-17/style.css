@@ -72,36 +72,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.container {
-  background-color: rgba(103, 22, 244, 0.745);
-  display: flex;
+.page {
   width: 650px;
   height: 850px;
   margin: 0 auto;
+  background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  display: flex;
 }
-.container .container__left {
-  background-color: rgba(173, 138, 243, 0.894);
-  width: 50%;
-  margin: 10px 2px 10px 10px;
+.page .main {
+  width: 296px;
+  height: 830px;
+  top: -2754px;
+  left: 2976px;
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.3019607843);
+  margin: 10px 4px 10px 8px;
 }
-.container .container__right {
-  background-color: rgba(204, 233, 238, 0.833);
-  width: 50%;
-  margin: 10px 3px 10px 10px;
+.page .education {
+  width: 321px;
+  height: 830px;
+  top: -2754px;
+  left: 3278px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  margin: 10px 4px 10px 8px;
 }
 
-.profile {
-  padding-left: 5px;
+.main .main__profile {
+  padding: 5px 10px;
   display: grid;
-  grid-template-areas: "photo name" "photo pro";
+  grid-template-areas: "avatar name" "avatar position";
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   gap: 10px;
 }
-.profile .photo {
-  grid-area: photo;
+.main .main__profile .main__profile-avatar {
+  grid-area: avatar;
 }
-.profile .name {
+.main .main__profile .main__profile-name {
   grid-area: name;
   font-family: Montserrat;
   font-size: 35px;
@@ -111,8 +120,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   color: white;
 }
-.profile .pro {
-  grid-area: pro;
+.main .main__profile .main__profile-position {
+  grid-area: position;
   font-family: Montserrat;
   font-size: 15px;
   font-weight: 700;
@@ -121,18 +130,145 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   color: #CECACA;
 }
-
-.photo img {
-  margin: 5px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+.main .main__contacts {
+  margin: 5px 10px;
+  padding: 10px;
+}
+.main .main__contacts .main__contacts-mail, .main .main__contacts .main__contacts-phone-number, .main .main__contacts .main__contacts-website, .main .main__contacts .main__contacts-location {
+  color: #FFFFFF;
+  font-family: Calibri;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: rgba(196, 196, 196, 0.3490196078);
+  border-radius: 10px;
+}
+.main .main__knowledges .main__knowledges-list {
+  /*li::before {
+  	content:" ";
+  	width: 10px;
+  	height: 10px;
+  	background-color: #FFFFFF;
+  	border-radius: 50%;
+  }*/
+}
+.main .main__hobbies {
+  margin: 5px 10px;
+  padding: 10px;
+}
+.main .main__hobbies .main__hobbies-shell {
+  background: rgba(196, 196, 196, 0.3490196078);
+  border-radius: 10px;
+}
+.main .main__hobbies .main__hobbies-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.main .main__hobbies .main__hobbies-list li {
+  position: relative;
+  padding-top: 10px;
+}
+.main .main__hobbies .main__hobbies-list li .reading, .main .main__hobbies .main__hobbies-list li .dancing, .main .main__hobbies .main__hobbies-list li .singing, .main .main__hobbies .main__hobbies-list li .football {
+  display: inline-block;
+}
+.main .main__hobbies .main__hobbies-list li .reading {
+  background-image: url("../../assets/svg-icons/Reading.png");
+  width: 35px;
+  height: 27.34px;
+}
+.main .main__hobbies .main__hobbies-list li .dancing {
+  background-image: url("../../assets/svg-icons/Dance.png");
+  width: 20px;
+  height: 30.48px;
+}
+.main .main__hobbies .main__hobbies-list li .singing {
+  background-image: url("../../assets/svg-icons/Singing.png");
+  width: 35px;
+  height: 29.4px;
+}
+.main .main__hobbies .main__hobbies-list li .football {
+  background-image: url("../../assets/svg-icons/Football.png");
+  width: 30px;
+  height: 30px;
 }
 
-.list {
-  margin-left: 10px;
-  font-size: 20px;
+.main__languages-list, .main__social-list, .main__knowledges-list, .main__hobbies-list {
+  font-family: Calibri;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FAFAFA;
 }
-.list .list li {
-  background: url("../../assets/svg-icons/ballerina.ico") left no-repeat;
+
+.main__knowledges, .main__languages, .main__social {
+  background: rgba(196, 196, 196, 0.3490196078);
+  border-radius: 10px;
+  margin: 5px 10px;
+  padding: 10px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+li {
+  font-family: Calibri;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FAFAFA;
+}
+
+span {
+  display: block;
+}
+
+.main__profile-avatar img {
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  background: #000000;
+  width: 110px;
+  height: 116.02px;
+  top: -2744px;
+  left: 2993px;
+  border-radius: 93px;
+}
+
+.education .title {
+  display: flex;
+  align-items: center;
+}
+.education .title .title-box {
+  background-color: rgb(59, 40, 40);
+  padding: 10px;
+}
+.education .title .title-box h1 {
+  color: #FFFFFF;
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.education .title .title-box .line {
+  flex-grow: 1;
+  height: 15px;
+  width: 1px;
+  background-color: rgb(59, 40, 40);
 }/*# sourceMappingURL=style.css.map */
