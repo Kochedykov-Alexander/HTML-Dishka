@@ -72,46 +72,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.page {
-  width: 650px;
-  height: 850px;
+.container {
   margin: 0 auto;
   background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   display: flex;
+  min-height: 100%;
+  padding: 10px 8px;
+  gap: 8px;
 }
-.page .main {
-  width: 296px;
-  height: 830px;
-  top: -2754px;
-  left: 2976px;
+.container .main {
+  width: 45%;
   border-radius: 10px;
   background: rgba(196, 196, 196, 0.3019607843);
-  margin: 10px 4px 10px 8px;
 }
-.page .education {
-  width: 321px;
-  height: 830px;
-  top: -2754px;
-  left: 3278px;
+.container .education {
+  width: 55%;
   border-radius: 10px;
-  background: #FFFFFF;
-  margin: 10px 4px 10px 8px;
+  background: white;
 }
 
 .main .main__profile {
   padding: 5px 10px;
-  display: grid;
-  grid-template-areas: "avatar name" "avatar position";
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  display: flex;
   gap: 10px;
 }
-.main .main__profile .main__profile-avatar {
-  grid-area: avatar;
+.main .main__profile .username {
+  padding: 10px;
 }
-.main .main__profile .main__profile-name {
-  grid-area: name;
+.main .main__profile .username .main__profile-dname {
+  font-family: Montserrat;
+  font-size: 25px;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #CECACA;
+}
+.main .main__profile .username .main__profile-name {
   font-family: Montserrat;
   font-size: 35px;
   font-weight: 500;
@@ -120,8 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   color: white;
 }
-.main .main__profile .main__profile-position {
-  grid-area: position;
+.main .main__profile .username .main__profile-position {
   font-family: Montserrat;
   font-size: 15px;
   font-weight: 700;
@@ -134,8 +130,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 10px;
   padding: 10px;
 }
-.main .main__contacts .main__contacts-mail, .main .main__contacts .main__contacts-phone-number, .main .main__contacts .main__contacts-website, .main .main__contacts .main__contacts-location {
-  color: #FFFFFF;
+.main .main__contacts .maim__contacts-list .main__contacts-mail, .main .main__contacts .maim__contacts-list .main__contacts-phone-number, .main .main__contacts .maim__contacts-list .main__contacts-website, .main .main__contacts .maim__contacts-list .main__contacts-location {
+  color: white;
   font-family: Calibri;
   font-size: 15px;
   font-weight: 400;
@@ -144,15 +140,38 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   background: rgba(196, 196, 196, 0.3490196078);
   border-radius: 10px;
+  padding-left: 24px;
 }
-.main .main__knowledges .main__knowledges-list {
-  /*li::before {
-  	content:" ";
-  	width: 10px;
-  	height: 10px;
-  	background-color: #FFFFFF;
-  	border-radius: 50%;
-  }*/
+.main .main__contacts .maim__contacts-list .main__contacts-mail {
+  background: url("../../assets/svg-icons/mdi_mail.png") no-repeat;
+}
+.main .main__contacts .maim__contacts-list .main__contacts-phone-number {
+  background: url("../../assets/svg-icons/mdi_call.png") no-repeat;
+  width: 18px;
+  height: 18px;
+}
+.main .main__contacts .maim__contacts-list .main__contacts-website {
+  background-image: url("../../assets/svg-icons/group.png") no-repeat;
+}
+.main .main__contacts .maim__contacts-list .main__contacts-website a {
+  color: white;
+}
+.main .main__contacts .maim__contacts-list .main__contacts-location {
+  background-image: url("../../assets/svg-icons/mdi_location_on.png") no-repeat;
+}
+.main .main__knowledges .main__knowledges-list li {
+  position: relative;
+  left: 12px;
+}
+.main .main__knowledges .main__knowledges-list li::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
 }
 .main .main__hobbies {
   margin: 5px 10px;
@@ -163,33 +182,33 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
 }
 .main .main__hobbies .main__hobbies-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  gap: 32px;
+  margin-top: 8px;
 }
-.main .main__hobbies .main__hobbies-list li {
-  position: relative;
-  padding-top: 10px;
+.main .main__hobbies .main__hobbies-list .main__item {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
-.main .main__hobbies .main__hobbies-list li .reading, .main .main__hobbies .main__hobbies-list li .dancing, .main .main__hobbies .main__hobbies-list li .singing, .main .main__hobbies .main__hobbies-list li .football {
-  display: inline-block;
-}
-.main .main__hobbies .main__hobbies-list li .reading {
+.main .main__hobbies .main__hobbies-list .reading {
   background-image: url("../../assets/svg-icons/Reading.png");
   width: 35px;
   height: 27.34px;
 }
-.main .main__hobbies .main__hobbies-list li .dancing {
+.main .main__hobbies .main__hobbies-list .dancing {
   background-image: url("../../assets/svg-icons/Dance.png");
   width: 20px;
   height: 30.48px;
 }
-.main .main__hobbies .main__hobbies-list li .singing {
+.main .main__hobbies .main__hobbies-list .singing {
   background-image: url("../../assets/svg-icons/Singing.png");
   width: 35px;
   height: 29.4px;
 }
-.main .main__hobbies .main__hobbies-list li .football {
+.main .main__hobbies .main__hobbies-list .football {
   background-image: url("../../assets/svg-icons/Football.png");
   width: 30px;
   height: 30px;
@@ -220,7 +239,7 @@ h2 {
   letter-spacing: 0px;
   text-align: left;
   font-weight: bold;
-  color: #FFFFFF;
+  color: white;
 }
 
 li {
@@ -242,33 +261,51 @@ span {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   background: #000000;
   width: 110px;
-  height: 116.02px;
-  top: -2744px;
-  left: 2993px;
-  border-radius: 93px;
+  height: 110px;
+  border-radius: 50%;
 }
 
-.education .title {
+.education {
+  padding: 10px;
+}
+.education .education__title {
   display: flex;
   align-items: center;
 }
-.education .title .title-box {
+.education .education__title .education__title-box {
   background-color: rgb(59, 40, 40);
+  border-radius: 8px;
   padding: 10px;
+  margin: 10px 0px;
 }
-.education .title .title-box h1 {
+.education .education__title .education__title-box h1 {
   color: #FFFFFF;
-  margin: 0;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
-  letter-spacing: 0px;
   text-align: left;
+  text-transform: uppercase;
 }
-.education .title .title-box .line {
-  flex-grow: 1;
-  height: 15px;
-  width: 1px;
+.education .education__title .education__title-box h1:after {
+  position: absolute;
+  content: "";
+  height: 1px;
   background-color: rgb(59, 40, 40);
+  width: 40%;
+  margin-left: 10px;
+}
+.education article {
+  font-size: 22px;
+  font-weight: 700;
+}
+.education .education__addition {
+  font-size: 20px;
+}
+.education .education__date {
+  font-size: 14px;
+  color: grey;
+}
+.education .education__description {
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
